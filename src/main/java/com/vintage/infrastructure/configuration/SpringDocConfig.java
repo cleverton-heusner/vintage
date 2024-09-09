@@ -11,6 +11,6 @@ public class SpringDocConfig {
     @Bean
     public SpringDocUtils springDocUtils() {
         return SpringDocUtils.getConfig()
-                .replaceWithClass(MonetaryAmount.class, CustomMonetaryAmount.class);
+                .replaceWithClass(MonetaryAmount.class, org.springdoc.core.converters.models.MonetaryAmount.class);
     }
 }
