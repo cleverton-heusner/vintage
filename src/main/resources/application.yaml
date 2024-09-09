@@ -1,0 +1,30 @@
+# app
+spring:
+  application:
+    name: vintage
+  mvc:
+    problemdetails:
+      enabled: true
+
+server:
+  port: 8080
+
+# documentation
+springdoc:
+  override-with-generic-response: false
+  swagger-ui:
+    path: /doc.html
+
+# urls
+customer:
+  client:
+    url: https://rgr3viiqdl8sikgv.public.blob.vercel-storage.com/clientes-Vz1U6aR3GTsjb3W8BRJhcNKmA81pVh.json
+
+product:
+  client:
+    url: https://rgr3viiqdl8sikgv.public.blob.vercel-storage.com/produtos-mnboX5IPl6VgG390FECTKqHsD9SkLS.json
+
+# customer
+loyal:
+  customer:
+    limit: 3
